@@ -1,0 +1,1 @@
+avrdude -c usbtiny -B 1 -pattiny85 -U flash:w:blink.hex

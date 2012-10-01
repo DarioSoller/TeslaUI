@@ -1,0 +1,28 @@
+============================================================================
+
+C Code Compiling
+-----------
+avr-gcc -mmcu=attiny85 blink.c -o blink.elf
+
+avr-objcopy -j .text -O ihex blink.elf blink.hex
+
+
+
+avr-gcc -mmcu=attiny85 button.c -o button.elf
+
+avr-objcopy -j .text -O ihex button.elf button.hex
+
+
+
+
+
+============================================================================
+
+AVR UPLOAD
+-----------
+
+avrdude -c usbtiny -B 1 -pattiny85 -U flash:w:blink.hex
+
+avrdude -c usbtiny -B 1 -pt85 -U flash:w:blink.hex   /usr/lib/udev/rules.d/99-custom.rules
+
+avrdude -c usbtiny -pt85 -U  flash:w:blink.hex

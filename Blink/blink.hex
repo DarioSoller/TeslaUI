@@ -1,921 +1,209 @@
-  
-
-
-<!DOCTYPE html>
-<html>
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TUIsla/ATtiny85Programming/blink/blink.hex at master · aurelient/TUIsla</title>
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
-    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144.png" />
-
-    
-    
-    <link rel="icon" type="image/x-icon" href="/favicon.png" />
-
-    <meta content="authenticity_token" name="csrf-param" />
-<meta content="qGDSTBICZaAmM4X762sVdaSR2ub3c7pXCfleYcJ7Eug=" name="csrf-token" />
-
-    <link href="https://a248.e.akamai.net/assets.github.com/assets/github-3777cc4451cda1ac4e4f8f2ba6de0bd6b17af5d7.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="https://a248.e.akamai.net/assets.github.com/assets/github2-a2b11aabdd670190f1de682e5367153bcf2ac02c.css" media="screen" rel="stylesheet" type="text/css" />
-    
-
-
-    <script src="https://a248.e.akamai.net/assets.github.com/assets/frameworks-ac63e4a1fc7b5030f8c99d5200722f51ed8e7baa.js" type="text/javascript"></script>
-    <script defer="defer" src="https://a248.e.akamai.net/assets.github.com/assets/github-b4c07f78e6c6bbda967b3071f067d7fe7587ab18.js" type="text/javascript"></script>
-    
-
-      <link rel='permalink' href='/aurelient/TUIsla/blob/843c131079420df2b1c994465c0ca3c394499898/ATtiny85Programming/blink/blink.hex'>
-    <meta property="og:title" content="TUIsla"/>
-    <meta property="og:type" content="githubog:gitrepository"/>
-    <meta property="og:url" content="https://github.com/aurelient/TUIsla"/>
-    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/gravatars/gravatar-user-420.png?1345673560"/>
-    <meta property="og:site_name" content="GitHub"/>
-    <meta property="og:description" content="wireless batteryless tangible widgets. Contribute to TUIsla development by creating an account on GitHub."/>
-
-    <meta name="description" content="wireless batteryless tangible widgets. Contribute to TUIsla development by creating an account on GitHub." />
-  <link href="https://github.com/aurelient/TUIsla/commits/master.atom" rel="alternate" title="Recent Commits to TUIsla:master" type="application/atom+xml" />
-
-  </head>
-
-
-  <body class="logged_in page-blob windows vis-public env-production ">
-    <div id="wrapper">
-
-    
-    
-
-      <div id="header" class="true clearfix">
-        <div class="container clearfix">
-          <a class="site-logo " href="https://github.com/">
-            <img alt="GitHub" class="github-logo-4x" height="30" src="https://a248.e.akamai.net/assets.github.com/images/modules/header/logov7@4x.png?1340935010" />
-            <img alt="GitHub" class="github-logo-4x-hover" height="30" src="https://a248.e.akamai.net/assets.github.com/images/modules/header/logov7@4x-hover.png?1340935010" />
-          </a>
-
-            <a href="/notifications" class="notification-indicator tooltipped downwards" title="You have no unread notifications">
-              <span class="mail-status all-read"></span>
-            </a>
-
-              
-    <div class="topsearch command-bar-activated">
-      <form accept-charset="UTF-8" action="/search" class="command_bar_form" id="top_search_form" method="get">
-  <a href="/search" class="advanced-search tooltipped downwards command-bar-search" id="advanced_search" title="Advanced Search"><span class="mini-icon mini-icon-advanced-search "></span></a>
-  <input type="text" name="q" id="command-bar" placeholder="Search or Type a Command" tabindex="1" />
-  <span class="mini-icon help tooltipped downwards" title="Show Command Bar Help"></span>
-  <input type="hidden" name="type" value="Everything" />
-  <input type="hidden" name="repo" value="" />
-  <input type="hidden" name="langOverride" value="" />
-  <input type="hidden" name="start_value" value="1" />
-</form>
-
-      <ul class="top-nav">
-          <li class="explore"><a href="https://github.com/explore">Explore</a></li>
-          <li><a href="https://gist.github.com">Gist</a></li>
-          <li><a href="/blog">Blog</a></li>
-        <li><a href="http://help.github.com">Help</a></li>
-      </ul>
-    </div>
-
-
-            
-
-
-  
-  <div id="userbox">
-    <div id="user">
-      <a href="https://github.com/DarioSoller"><img height="20" src="https://secure.gravatar.com/avatar/8d2bf6a7e6f95e58f1e7458d96b69f57?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="20" /></a>
-      <a href="https://github.com/DarioSoller" class="name">DarioSoller</a>
-    </div>
-    <ul id="user-links">
-      <li>
-        <a href="/new" id="new_repo" class="tooltipped downwards" title="Create a New Repo"><span class="mini-icon mini-icon-create"></span></a>
-      </li>
-      <li>
-        <a href="/settings/profile" id="account_settings"
-          class="tooltipped downwards"
-          title="Account Settings ">
-          <span class="mini-icon mini-icon-account-settings"></span>
-        </a>
-      </li>
-      <li>
-          <a href="/logout" data-method="post" id="logout" class="tooltipped downwards" title="Sign Out">
-            <span class="mini-icon mini-icon-logout"></span>
-          </a>
-      </li>
-    </ul>
-  </div>
-
-
-
-          
-        </div>
-      </div>
-
-      
-
-      
-
-
-            <div class="site hfeed" itemscope itemtype="http://schema.org/WebPage">
-      <div class="container hentry">
-        
-        <div class="pagehead repohead instapaper_ignore readability-menu">
-        <div class="title-actions-bar">
-          
-
-
-              <ul class="pagehead-actions">
-          <li class="nspr">
-            <a href="/aurelient/TUIsla/pull/new/master" class="minibutton btn-pull-request" icon_class="mini-icon-pull-request"><span class="mini-icon mini-icon-pull-request"></span>Pull Request</a>
-          </li>
-
-          <li class="subscription">
-              <form accept-charset="UTF-8" action="/notifications/subscribe" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="qGDSTBICZaAmM4X762sVdaSR2ub3c7pXCfleYcJ7Eug=" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="4387278" />
-  <div class="context-menu-container js-menu-container js-context-menu">
-    <span class="minibutton switcher bigger js-menu-target">
-      <span class="js-context-button">
-          <span class="mini-icon mini-icon-watching"></span>Watch
-      </span>
-    </span>
-
-    <div class="context-pane js-menu-content">
-      <a href="javascript:;" class="close js-menu-close"><span class="mini-icon mini-icon-remove-close"></span></a>
-      <div class="context-title">Notification status</div>
-
-      <div class="context-body pane-selector">
-        <ul class="js-navigation-container">
-          <li class="selector-item js-navigation-item js-navigation-target selected">
-            <span class="mini-icon mini-icon-confirm"></span>
-            <label>
-              <input checked="checked" id="do_included" name="do" type="radio" value="included" />
-              <h4>Not watching</h4>
-              <p>You will only receive notifications when you participate or are mentioned.</p>
-            </label>
-            <span class="context-button-text js-context-button-text">
-              <span class="mini-icon mini-icon-watching"></span>
-              Watch
-            </span>
-          </li>
-          <li class="selector-item js-navigation-item js-navigation-target ">
-            <span class="mini-icon mini-icon-confirm"></span>
-            <label>
-              <input id="do_subscribed" name="do" type="radio" value="subscribed" />
-              <h4>Watching</h4>
-              <p>You will receive all notifications for this repository.</p>
-            </label>
-            <span class="context-button-text js-context-button-text">
-              <span class="mini-icon mini-icon-unwatch"></span>
-              Unwatch
-            </span>
-          </li>
-          <li class="selector-item js-navigation-item js-navigation-target ">
-            <span class="mini-icon mini-icon-confirm"></span>
-            <label>
-              <input id="do_ignore" name="do" type="radio" value="ignore" />
-              <h4>Ignored</h4>
-              <p>You will not receive notifications for this repository.</p>
-            </label>
-            <span class="context-button-text js-context-button-text">
-              <span class="mini-icon mini-icon-mute"></span>
-              Stop ignoring
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</form>
-          </li>
-
-          <li class="js-toggler-container js-social-container starring-container ">
-            <a href="/aurelient/TUIsla/unstar" class="minibutton js-toggler-target starred" data-remote="true" data-method="post" rel="nofollow">
-              <span class="mini-icon mini-icon-star"></span>Unstar
-            </a><a href="/aurelient/TUIsla/star" class="minibutton js-toggler-target unstarred" data-remote="true" data-method="post" rel="nofollow">
-              <span class="mini-icon mini-icon-star"></span>Star
-            </a><a class="social-count js-social-count" href="/aurelient/TUIsla/stargazers">1</a>
-          </li>
-
-              <li><a href="/aurelient/TUIsla/fork" class="minibutton js-toggler-target fork-button lighter" rel="nofollow" data-method="post"><span class="mini-icon mini-icon-fork"></span>Fork</a><a href="/aurelient/TUIsla/network" class="social-count">0</a>
-              </li>
-
-
-    </ul>
-
-          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
-            <span class="repo-label"><span>public</span></span>
-            <span class="mega-icon mega-icon-public-repo"></span>
-            <span class="author vcard">
-              <a href="/aurelient" class="url fn" itemprop="url" rel="author">
-              <span itemprop="title">aurelient</span>
-              </a></span> /
-            <strong><a href="/aurelient/TUIsla" class="js-current-repository">TUIsla</a></strong>
-          </h1>
-        </div>
-
-          
-
-  <ul class="tabs">
-    <li><a href="/aurelient/TUIsla" class="selected" highlight="repo_sourcerepo_downloadsrepo_commitsrepo_tagsrepo_branches">Code</a></li>
-    <li><a href="/aurelient/TUIsla/network" highlight="repo_network">Network</a></li>
-    <li><a href="/aurelient/TUIsla/pulls" highlight="repo_pulls">Pull Requests <span class='counter'>0</span></a></li>
-
-      <li><a href="/aurelient/TUIsla/issues" highlight="repo_issues">Issues <span class='counter'>0</span></a></li>
-
-      <li><a href="/aurelient/TUIsla/wiki" highlight="repo_wiki">Wiki</a></li>
-
-
-    <li><a href="/aurelient/TUIsla/graphs" highlight="repo_graphsrepo_contributors">Graphs</a></li>
-
-
-  </ul>
-  
-<div class="frame frame-center tree-finder" style="display:none"
-      data-tree-list-url="/aurelient/TUIsla/tree-list/843c131079420df2b1c994465c0ca3c394499898"
-      data-blob-url-prefix="/aurelient/TUIsla/blob/843c131079420df2b1c994465c0ca3c394499898"
-    >
-
-  <div class="breadcrumb">
-    <span class="bold"><a href="/aurelient/TUIsla">TUIsla</a></span> /
-    <input class="tree-finder-input js-navigation-enable" type="text" name="query" autocomplete="off" spellcheck="false">
-  </div>
-
-    <div class="octotip">
-      <p>
-        <a href="/aurelient/TUIsla/dismiss-tree-finder-help" class="dismiss js-dismiss-tree-list-help" title="Hide this notice forever" rel="nofollow">Dismiss</a>
-        <span class="bold">Octotip:</span> You've activated the <em>file finder</em>
-        by pressing <span class="kbd">t</span> Start typing to filter the
-        file list. Use <span class="kbd badmono">↑</span> and
-        <span class="kbd badmono">↓</span> to navigate,
-        <span class="kbd">enter</span> to view files.
-      </p>
-    </div>
-
-  <table class="tree-browser" cellpadding="0" cellspacing="0">
-    <tr class="js-header"><th>&nbsp;</th><th>name</th></tr>
-    <tr class="js-no-results no-results" style="display: none">
-      <th colspan="2">No matching files</th>
-    </tr>
-    <tbody class="js-results-list js-navigation-container">
-    </tbody>
-  </table>
-</div>
-
-<div id="jump-to-line" style="display:none">
-  <h2>Jump to Line</h2>
-  <form accept-charset="UTF-8">
-    <input class="textfield" type="text">
-    <div class="full-button">
-      <button type="submit" class="classy">
-        Go
-      </button>
-    </div>
-  </form>
-</div>
-
-
-<div class="tabnav">
-
-  <span class="tabnav-right">
-    <ul class="tabnav-tabs">
-      <li><a href="/aurelient/TUIsla/tags" class="tabnav-tab" highlight="repo_tags">Tags <span class="counter blank">0</span></a></li>
-      <li><a href="/aurelient/TUIsla/downloads" class="tabnav-tab" highlight="repo_downloads">Downloads <span class="counter blank">0</span></a></li>
-    </ul>
-    
-  </span>
-
-  <div class="tabnav-widget scope">
-
-    <div class="context-menu-container js-menu-container js-context-menu">
-      <a href="#"
-         class="minibutton bigger switcher js-menu-target js-commitish-button btn-branch repo-tree"
-         data-hotkey="w"
-         data-master-branch="master"
-         data-ref="master">
-         <span><em class="mini-icon mini-icon-branch"></em><i>branch:</i> master</span>
-      </a>
-
-      <div class="context-pane commitish-context js-menu-content">
-        <a href="javascript:;" class="close js-menu-close"><span class="mini-icon mini-icon-remove-close"></span></a>
-        <div class="context-title">Switch branches/tags</div>
-        <div class="context-body pane-selector commitish-selector js-navigation-container">
-          <div class="filterbar">
-            <input type="text" id="context-commitish-filter-field" class="js-navigation-enable" placeholder="Filter branches/tags" data-filterable />
-            <ul class="tabs">
-              <li><a href="#" data-filter="branches" class="selected">Branches</a></li>
-              <li><a href="#" data-filter="tags">Tags</a></li>
-            </ul>
-          </div>
-
-          <div class="js-filter-tab js-filter-branches" data-filterable-for="context-commitish-filter-field" data-filterable-type=substring>
-            <div class="no-results js-not-filterable">Nothing to show</div>
-              <div class="commitish-item branch-commitish selector-item js-navigation-item js-navigation-target selected">
-                <span class="mini-icon mini-icon-confirm"></span>
-                <h4>
-                    <a href="/aurelient/TUIsla/blob/master/ATtiny85Programming/blink/blink.hex" class="js-navigation-open" data-name="master" rel="nofollow">master</a>
-                </h4>
-              </div>
-          </div>
-
-          <div class="js-filter-tab js-filter-tags" style="display:none" data-filterable-for="context-commitish-filter-field" data-filterable-type=substring>
-            <div class="no-results js-not-filterable">Nothing to show</div>
-          </div>
-        </div>
-      </div><!-- /.commitish-context-context -->
-    </div>
-  </div> <!-- /.scope -->
-
-  <ul class="tabnav-tabs">
-    <li><a href="/aurelient/TUIsla" class="selected tabnav-tab" highlight="repo_source">Files</a></li>
-    <li><a href="/aurelient/TUIsla/commits/master" class="tabnav-tab" highlight="repo_commits">Commits</a></li>
-    <li><a href="/aurelient/TUIsla/branches" class="tabnav-tab" highlight="repo_branches" rel="nofollow">Branches <span class="counter ">1</span></a></li>
-  </ul>
-
-</div>
-
-  
-  
-  
-
-
-          
-
-        </div><!-- /.repohead -->
-
-        <div id="js-repo-pjax-container" data-pjax-container>
-          
-
-
-<!-- blob contrib key: blob_contributors:v21:0d0eacc4511aa6a3f1890b335584dca8 -->
-<!-- blob contrib frag key: views10/v8/blob_contributors:v21:0d0eacc4511aa6a3f1890b335584dca8 -->
-
-<!-- block_view_fragment_key: views10/v8/blob:v21:37133d16e0004fec98c12ad3bb952a24 -->
-
-  <div id="slider">
-
-    <div class="breadcrumb" data-path="ATtiny85Programming/blink/blink.hex/">
-      <b itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/aurelient/TUIsla/tree/843c131079420df2b1c994465c0ca3c394499898" class="js-rewrite-sha" itemprop="url"><span itemprop="title">TUIsla</span></a></b> / <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/aurelient/TUIsla/tree/843c131079420df2b1c994465c0ca3c394499898/ATtiny85Programming" class="js-rewrite-sha" itemscope="url"><span itemprop="title">ATtiny85Programming</span></a></span> / <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/aurelient/TUIsla/tree/843c131079420df2b1c994465c0ca3c394499898/ATtiny85Programming/blink" class="js-rewrite-sha" itemscope="url"><span itemprop="title">blink</span></a></span> / <strong class="final-path">blink.hex</strong> <span class="js-clippy mini-icon mini-icon-clippy " data-clipboard-text="ATtiny85Programming/blink/blink.hex" data-copied-hint="copied!" data-copy-hint="copy to clipboard"></span>
-    </div>
-
-      
-  <div class="commit file-history-tease js-blob-contributors-content" data-path="ATtiny85Programming/blink/blink.hex/">
-    <img class="main-avatar" height="24" src="https://secure.gravatar.com/avatar/c903395d67b2076a9cb5d36f0c7178ef?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="24" />
-    <span class="author">Aurelien</span>
-    <time class="js-relative-date" datetime="2012-05-25T11:49:30-07:00" title="2012-05-25 11:49:30">May 25, 2012</time>
-    <div class="commit-title">
-        <a href="/aurelient/TUIsla/commit/f3380cd7853f4664024033fba89a2e17f4b499c4" class="message">AVR c code just to practice</a>
-    </div>
-
-    <div class="participation">
-      <p class="quickstat"><a href="#blob_contributors_box" rel="facebox"><strong>0</strong> contributors</a></p>
-      
-    </div>
-    <div id="blob_contributors_box" style="display:none">
-      <h2>Users on GitHub who have contributed to this file</h2>
-      <ul class="facebox-user-list">
-      </ul>
-    </div>
-  </div>
-
-
-    <div class="frames">
-      <div class="frame frame-center" data-path="ATtiny85Programming/blink/blink.hex/" data-permalink-url="/aurelient/TUIsla/blob/843c131079420df2b1c994465c0ca3c394499898/ATtiny85Programming/blink/blink.hex" data-title="TUIsla/ATtiny85Programming/blink/blink.hex at master · aurelient/TUIsla · GitHub" data-type="blob">
-
-        <div id="files" class="bubble">
-          <div class="file">
-            <div class="meta">
-              <div class="info">
-                <span class="icon"><b class="mini-icon mini-icon-text-file"></b></span>
-                <span class="mode" title="File Mode">file</span>
-                  <span>9 lines (8 sloc)</span>
-                <span>0.3 kb</span>
-              </div>
-              <ul class="button-group actions">
-                  <li>
-                    <a class="grouped-button file-edit-link minibutton bigger lighter js-rewrite-sha" href="/aurelient/TUIsla/edit/843c131079420df2b1c994465c0ca3c394499898/ATtiny85Programming/blink/blink.hex" data-method="post" rel="nofollow" data-hotkey="e">Edit</a>
-                  </li>
-                <li>
-                  <a href="/aurelient/TUIsla/raw/master/ATtiny85Programming/blink/blink.hex" class="minibutton grouped-button bigger lighter" id="raw-url">Raw</a>
-                </li>
-                  <li>
-                    <a href="/aurelient/TUIsla/blame/master/ATtiny85Programming/blink/blink.hex" class="minibutton grouped-button bigger lighter">Blame</a>
-                  </li>
-                <li>
-                  <a href="/aurelient/TUIsla/commits/master/ATtiny85Programming/blink/blink.hex" class="minibutton grouped-button bigger lighter" rel="nofollow">History</a>
-                </li>
-              </ul>
-            </div>
-              <div class="data type-text">
-      <table cellpadding="0" cellspacing="0" class="lines">
-        <tr>
-          <td>
-            <pre class="line_numbers"><span id="L1" rel="#L1">1</span>
-<span id="L2" rel="#L2">2</span>
-<span id="L3" rel="#L3">3</span>
-<span id="L4" rel="#L4">4</span>
-<span id="L5" rel="#L5">5</span>
-<span id="L6" rel="#L6">6</span>
-<span id="L7" rel="#L7">7</span>
-<span id="L8" rel="#L8">8</span>
-</pre>
-          </td>
-          <td width="100%">
-                <div class="highlight"><pre><div class='line' id='LC1'>:100000000EC015C014C013C012C011C010C00FC064</div><div class='line' id='LC2'>:100010000EC00DC00CC00BC00AC009C008C011241E</div><div class='line' id='LC3'>:100020001FBECFE5D2E0DEBFCDBF02D018C0E8CF03</div><div class='line' id='LC4'>:1000300088E087BB88BB2FEF39E648E1215030408C</div><div class='line' id='LC5'>:100040004040E1F700C0000018BA2FEF39E648E160</div><div class='line' id='LC6'>:10005000215030404040E1F700C00000EBCFF89461</div><div class='line' id='LC7'>:02006000FFCFD0</div><div class='line' id='LC8'>:00000001FF</div></pre></div>
-          </td>
-        </tr>
-      </table>
-  </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-<div class="frame frame-loading large-loading-area" style="display:none;" data-tree-list-url="/aurelient/TUIsla/tree-list/843c131079420df2b1c994465c0ca3c394499898" data-blob-url-prefix="/aurelient/TUIsla/blob/843c131079420df2b1c994465c0ca3c394499898">
-  <img src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-128.gif?1347543527" height="64" width="64">
-</div>
-
-        </div>
-      </div>
-      <div class="context-overlay"></div>
-    </div>
-
-      <div id="footer-push"></div><!-- hack for sticky footer -->
-    </div><!-- end of wrapper - hack for sticky footer -->
-
-      <!-- footer -->
-      <div id="footer" >
-        
-  <div class="upper_footer">
-     <div class="container clearfix">
-
-       <!--[if IE]><h4 id="blacktocat_ie">GitHub Links</h4><![endif]-->
-       <![if !IE]><h4 id="blacktocat">GitHub Links</h4><![endif]>
-
-       <ul class="footer_nav">
-         <h4>GitHub</h4>
-         <li><a href="https://github.com/about">About</a></li>
-         <li><a href="https://github.com/blog">Blog</a></li>
-         <li><a href="https://github.com/features">Features</a></li>
-         <li><a href="https://github.com/contact">Contact &amp; Support</a></li>
-         <li><a href="https://github.com/training">Training</a></li>
-         <li><a href="http://enterprise.github.com/">GitHub Enterprise</a></li>
-         <li><a href="http://status.github.com/">Site Status</a></li>
-       </ul>
-
-       <ul class="footer_nav">
-         <h4>Clients</h4>
-         <li><a href="http://mac.github.com/">GitHub for Mac</a></li>
-         <li><a href="http://windows.github.com/">GitHub for Windows</a></li>
-         <li><a href="http://eclipse.github.com/">GitHub for Eclipse</a></li>
-         <li><a href="http://mobile.github.com/">GitHub Mobile Apps</a></li>
-       </ul>
-
-       <ul class="footer_nav">
-         <h4>Tools</h4>
-         <li><a href="http://get.gaug.es/">Gauges: Web analytics</a></li>
-         <li><a href="http://speakerdeck.com">Speaker Deck: Presentations</a></li>
-         <li><a href="https://gist.github.com">Gist: Code snippets</a></li>
-
-         <h4 class="second">Extras</h4>
-         <li><a href="http://jobs.github.com/">Job Board</a></li>
-         <li><a href="http://shop.github.com/">GitHub Shop</a></li>
-         <li><a href="http://octodex.github.com/">The Octodex</a></li>
-       </ul>
-
-       <ul class="footer_nav">
-         <h4>Documentation</h4>
-         <li><a href="http://help.github.com/">GitHub Help</a></li>
-         <li><a href="http://developer.github.com/">Developer API</a></li>
-         <li><a href="http://github.github.com/github-flavored-markdown/">GitHub Flavored Markdown</a></li>
-         <li><a href="http://pages.github.com/">GitHub Pages</a></li>
-       </ul>
-
-     </div><!-- /.site -->
-  </div><!-- /.upper_footer -->
-
-<div class="lower_footer">
-  <div class="container clearfix">
-    <!--[if IE]><div id="legal_ie"><![endif]-->
-    <![if !IE]><div id="legal"><![endif]>
-      <ul>
-          <li><a href="https://github.com/site/terms">Terms of Service</a></li>
-          <li><a href="https://github.com/site/privacy">Privacy</a></li>
-          <li><a href="https://github.com/security">Security</a></li>
-      </ul>
-
-      <p>&copy; 2012 <span title="0.07488s from fe19.rs.github.com">GitHub</span> Inc. All rights reserved.</p>
-    </div><!-- /#legal or /#legal_ie-->
-
-  </div><!-- /.site -->
-</div><!-- /.lower_footer -->
-
-      </div><!-- /#footer -->
-
-    
-
-<div id="keyboard_shortcuts_pane" class="instapaper_ignore readability-extra" style="display:none">
-  <h2>Keyboard Shortcuts <small><a href="#" class="js-see-all-keyboard-shortcuts">(see all)</a></small></h2>
-
-  <div class="columns threecols">
-    <div class="column first">
-      <h3>Site wide shortcuts</h3>
-      <dl class="keyboard-mappings">
-        <dt>s</dt>
-        <dd>Focus command bar</dd>
-      </dl>
-      <dl class="keyboard-mappings">
-        <dt>?</dt>
-        <dd>Bring up this help dialog</dd>
-      </dl>
-    </div><!-- /.column.first -->
-
-    <div class="column middle" style='display:none'>
-      <h3>Commit list</h3>
-      <dl class="keyboard-mappings">
-        <dt>j</dt>
-        <dd>Move selection down</dd>
-      </dl>
-      <dl class="keyboard-mappings">
-        <dt>k</dt>
-        <dd>Move selection up</dd>
-      </dl>
-      <dl class="keyboard-mappings">
-        <dt>c <em>or</em> o <em>or</em> enter</dt>
-        <dd>Open commit</dd>
-      </dl>
-      <dl class="keyboard-mappings">
-        <dt>y</dt>
-        <dd>Expand URL to its canonical form</dd>
-      </dl>
-    </div><!-- /.column.first -->
-
-    <div class="column last js-hidden-pane" style='display:none'>
-      <h3>Pull request list</h3>
-      <dl class="keyboard-mappings">
-        <dt>j</dt>
-        <dd>Move selection down</dd>
-      </dl>
-      <dl class="keyboard-mappings">
-        <dt>k</dt>
-        <dd>Move selection up</dd>
-      </dl>
-      <dl class="keyboard-mappings">
-        <dt>o <em>or</em> enter</dt>
-        <dd>Open issue</dd>
-      </dl>
-      <dl class="keyboard-mappings">
-        <dt><span class="platform-mac">⌘</span><span class="platform-other">ctrl</span> <em>+</em> enter</dt>
-        <dd>Submit comment</dd>
-      </dl>
-      <dl class="keyboard-mappings">
-        <dt><span class="platform-mac">⌘</span><span class="platform-other">ctrl</span> <em>+</em> shift p</dt>
-        <dd>Preview comment</dd>
-      </dl>
-    </div><!-- /.columns.last -->
-
-  </div><!-- /.columns.equacols -->
-
-  <div class="js-hidden-pane" style='display:none'>
-    <div class="rule"></div>
-
-    <h3>Issues</h3>
-
-    <div class="columns threecols">
-      <div class="column first">
-        <dl class="keyboard-mappings">
-          <dt>j</dt>
-          <dd>Move selection down</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>k</dt>
-          <dd>Move selection up</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>x</dt>
-          <dd>Toggle selection</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>o <em>or</em> enter</dt>
-          <dd>Open issue</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt><span class="platform-mac">⌘</span><span class="platform-other">ctrl</span> <em>+</em> enter</dt>
-          <dd>Submit comment</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt><span class="platform-mac">⌘</span><span class="platform-other">ctrl</span> <em>+</em> shift p</dt>
-          <dd>Preview comment</dd>
-        </dl>
-      </div><!-- /.column.first -->
-      <div class="column last">
-        <dl class="keyboard-mappings">
-          <dt>c</dt>
-          <dd>Create issue</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>l</dt>
-          <dd>Create label</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>i</dt>
-          <dd>Back to inbox</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>u</dt>
-          <dd>Back to issues</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>/</dt>
-          <dd>Focus issues search</dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-
-  <div class="js-hidden-pane" style='display:none'>
-    <div class="rule"></div>
-
-    <h3>Issues Dashboard</h3>
-
-    <div class="columns threecols">
-      <div class="column first">
-        <dl class="keyboard-mappings">
-          <dt>j</dt>
-          <dd>Move selection down</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>k</dt>
-          <dd>Move selection up</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>o <em>or</em> enter</dt>
-          <dd>Open issue</dd>
-        </dl>
-      </div><!-- /.column.first -->
-    </div>
-  </div>
-
-  <div class="js-hidden-pane" style='display:none'>
-    <div class="rule"></div>
-
-    <h3>Network Graph</h3>
-    <div class="columns equacols">
-      <div class="column first">
-        <dl class="keyboard-mappings">
-          <dt><span class="badmono">←</span> <em>or</em> h</dt>
-          <dd>Scroll left</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt><span class="badmono">→</span> <em>or</em> l</dt>
-          <dd>Scroll right</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt><span class="badmono">↑</span> <em>or</em> k</dt>
-          <dd>Scroll up</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt><span class="badmono">↓</span> <em>or</em> j</dt>
-          <dd>Scroll down</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>t</dt>
-          <dd>Toggle visibility of head labels</dd>
-        </dl>
-      </div><!-- /.column.first -->
-      <div class="column last">
-        <dl class="keyboard-mappings">
-          <dt>shift <span class="badmono">←</span> <em>or</em> shift h</dt>
-          <dd>Scroll all the way left</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>shift <span class="badmono">→</span> <em>or</em> shift l</dt>
-          <dd>Scroll all the way right</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>shift <span class="badmono">↑</span> <em>or</em> shift k</dt>
-          <dd>Scroll all the way up</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>shift <span class="badmono">↓</span> <em>or</em> shift j</dt>
-          <dd>Scroll all the way down</dd>
-        </dl>
-      </div><!-- /.column.last -->
-    </div>
-  </div>
-
-  <div class="js-hidden-pane" >
-    <div class="rule"></div>
-    <div class="columns threecols">
-      <div class="column first js-hidden-pane" >
-        <h3>Source Code Browsing</h3>
-        <dl class="keyboard-mappings">
-          <dt>t</dt>
-          <dd>Activates the file finder</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>l</dt>
-          <dd>Jump to line</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>w</dt>
-          <dd>Switch branch/tag</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>y</dt>
-          <dd>Expand URL to its canonical form</dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-
-  <div class="js-hidden-pane" style='display:none'>
-    <div class="rule"></div>
-    <div class="columns threecols">
-      <div class="column first">
-        <h3>Browsing Commits</h3>
-        <dl class="keyboard-mappings">
-          <dt><span class="platform-mac">⌘</span><span class="platform-other">ctrl</span> <em>+</em> enter</dt>
-          <dd>Submit comment</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>escape</dt>
-          <dd>Close form</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>p</dt>
-          <dd>Parent commit</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>o</dt>
-          <dd>Other parent commit</dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-
-  <div class="js-hidden-pane" style='display:none'>
-    <div class="rule"></div>
-    <h3>Notifications</h3>
-
-    <div class="columns threecols">
-      <div class="column first">
-        <dl class="keyboard-mappings">
-          <dt>j</dt>
-          <dd>Move selection down</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>k</dt>
-          <dd>Move selection up</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>o <em>or</em> enter</dt>
-          <dd>Open notification</dd>
-        </dl>
-      </div><!-- /.column.first -->
-
-      <div class="column second">
-        <dl class="keyboard-mappings">
-          <dt>e <em>or</em> shift i <em>or</em> y</dt>
-          <dd>Mark as read</dd>
-        </dl>
-        <dl class="keyboard-mappings">
-          <dt>shift m</dt>
-          <dd>Mute thread</dd>
-        </dl>
-      </div><!-- /.column.first -->
-    </div>
-  </div>
-
-</div>
-
-    <div id="markdown-help" class="instapaper_ignore readability-extra">
-  <h2>Markdown Cheat Sheet</h2>
-
-  <div class="cheatsheet-content">
-
-  <div class="mod">
-    <div class="col">
-      <h3>Format Text</h3>
-      <p>Headers</p>
-      <pre>
-# This is an &lt;h1&gt; tag
-## This is an &lt;h2&gt; tag
-###### This is an &lt;h6&gt; tag</pre>
-     <p>Text styles</p>
-     <pre>
-*This text will be italic*
-_This will also be italic_
-**This text will be bold**
-__This will also be bold__
-
-*You **can** combine them*
-</pre>
-    </div>
-    <div class="col">
-      <h3>Lists</h3>
-      <p>Unordered</p>
-      <pre>
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b</pre>
-     <p>Ordered</p>
-     <pre>
-1. Item 1
-2. Item 2
-3. Item 3
-   * Item 3a
-   * Item 3b</pre>
-    </div>
-    <div class="col">
-      <h3>Miscellaneous</h3>
-      <p>Images</p>
-      <pre>
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-</pre>
-     <p>Links</p>
-     <pre>
-http://github.com - automatic!
-[GitHub](http://github.com)</pre>
-<p>Blockquotes</p>
-     <pre>
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-</pre>
-    </div>
-  </div>
-  <div class="rule"></div>
-
-  <h3>Code Examples in Markdown</h3>
-  <div class="col">
-      <p>Syntax highlighting with <a href="http://github.github.com/github-flavored-markdown/" title="GitHub Flavored Markdown" target="_blank">GFM</a></p>
-      <pre>
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```</pre>
-    </div>
-    <div class="col">
-      <p>Or, indent your code 4 spaces</p>
-      <pre>
-Here is a Python code example
-without syntax highlighting:
-
-    def foo:
-      if not bar:
-        return true</pre>
-    </div>
-    <div class="col">
-      <p>Inline code for comments</p>
-      <pre>
-I think you should use an
-`&lt;addr&gt;` element here instead.</pre>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-    <div id="ajax-error-message" class="flash flash-error">
-      <span class="mini-icon mini-icon-exclamation"></span>
-      Something went wrong with that request. Please try again.
-      <a href="#" class="mini-icon mini-icon-remove-close ajax-error-dismiss"></a>
-    </div>
-
-    <div id="logo-popup">
-      <h2>Looking for the GitHub logo?</h2>
-      <ul>
-        <li>
-          <h4>GitHub Logo</h4>
-          <a href="http://github-media-downloads.s3.amazonaws.com/GitHub_Logos.zip"><img alt="Github_logo" src="https://a248.e.akamai.net/assets.github.com/images/modules/about_page/github_logo.png?1340935010" /></a>
-          <a href="http://github-media-downloads.s3.amazonaws.com/GitHub_Logos.zip" class="minibutton download">Download</a>
-        </li>
-        <li>
-          <h4>The Octocat</h4>
-          <a href="http://github-media-downloads.s3.amazonaws.com/Octocats.zip"><img alt="Octocat" src="https://a248.e.akamai.net/assets.github.com/images/modules/about_page/octocat.png?1340935010" /></a>
-          <a href="http://github-media-downloads.s3.amazonaws.com/Octocats.zip" class="minibutton download">Download</a>
-        </li>
-      </ul>
-    </div>
-
-    
-    
-    <span id='server_response_time' data-time='0.07734' data-host='fe19'></span>
-    
-  </body>
-</html>
-
+:100000000EC020C01FC01EC01DC01CC01BC01AC017
+:1000100019C018C017C016C015C014C013C01124D1
+:100020001FBECFE5D2E0DEBFCDBF10E0A0E6B0E05E
+:10003000E6EFFCE002C005900D92A836B107D9F7B3
+:1000400002D057C6DDCFDF93CF93CDB7DEB76C9725
+:100050000FB6F894DEBF0FBECDBFE7E3F0E088E057
+:100060008083E8E3F0E088E0808380E090E0AAE726
+:10007000B4E4898F9A8FAB8FBC8F698D7A8D8B8D0D
+:100080009C8D20E030E04AEF54E48FD2DC01CB01BC
+:100090008D8B9E8BAF8BB88F6D897E898F89988D64
+:1000A00020E030E040E85FE3CBD388232CF481E00C
+:1000B00090E09C8B8B8B3BC06D897E898F89988D5E
+:1000C00020E03FEF4FE757E465D318163CF5698D04
+:1000D0007A8D8B8D9C8D20E030E040E251E465D23A
+:1000E000DC01CB01BC01CD019CD0DC01CB019C8BA0
+:1000F0008B8B0FC088EC90E09A8B898B89899A89C9
+:100100000197F1F79A8B898B8B899C8901979C8B3E
+:100110008B8B8B899C89009769F713C06D897E89C9
+:100120008F89988D7ED0DC01CB019C8B8B8B8B894A
+:100130009C89988B8F878F8598890197F1F7988B89
+:100140008F87E8E3F0E0108280E090E0AAE7B4E473
+:100150008B879C87AD87BE876B857C858D859E85CB
+:1001600020E030E04AEF54E420D2DC01CB018F8361
+:100170009887A987BA876F81788589859A8520E0D5
+:1001800030E040E85FE35CD388232CF481E090E02A
+:100190009E838D833BC06F81788589859A8520E019
+:1001A0003FEF4FE757E4F6D218163CF56B857C8598
+:1001B0008D859E8520E030E040E251E4F6D1DC01FF
+:1001C000CB01BC01CD012DD0DC01CB019E838D8301
+:1001D0000FC088EC90E09C838B838B819C8101977E
+:1001E000F1F79C838B838D819E8101979E838D8304
+:1001F0008D819E81009769F734CF6F8178858985DD
+:100200009A850FD0DC01CB019E838D838D819E81E9
+:100210009A83898389819A810197F1F79A838983E7
+:1002200020CFEF92FF920F931F937B018C0120E070
+:1002300030E040E05FE4D9D288237CF0C801B70108
+:1002400020E030E040E05FE45ED125D39B01AC01CB
+:10025000205030404040504805C0C801B7011BD372
+:100260009B01AC01B901CA011F910F91FF90EF9062
+:100270000895A0E0B0E0EEE3F1E004C5DC012B015D
+:10028000FA019C91923008F439C1EB0188818230E7
+:1002900008F433C1943069F4843009F02FC1119609
+:1002A0009C9111978981981709F428C1A0E6B0E0C4
+:1002B00025C1843009F421C18230A9F4923009F0BB
+:1002C0001DC19A01AD0188E0EA010990AE01E90182
+:1002D00009929E018150C1F7E201898111969C919A
+:1002E0008923818308C1923009F407C112962D90A9
+:1002F0003C901397EB018A819B811496AD90BD9041
+:10030000CD90DC901797EC80FD800E811F819101CC
+:10031000281B390BB90137FF04C066277727621BFA
+:10032000730B603271050CF061C0121613066CF588
+:1003300037014801062E04C09694879477946794F9
+:100340000A94D2F721E030E040E050E004C0220FF0
+:10035000331F441F551F6A95D2F72150304040404B
+:1003600050402E213F2140235123211531054105C5
+:10037000510521F021E030E040E050E079018A01B0
+:10038000E628F728082919293CC0232BD1F1260E8D
+:10039000371E35014601062E04C096948794779443
+:1003A00067940A94D2F721E030E040E050E004C0C6
+:1003B000220F331F441F551F6A95D2F7215030403A
+:1003C000404050402A213B214C215D21211531051F
+:1003D0004105510521F021E030E040E050E05901B5
+:1003E0006A01A628B728C828D9280BC0821593050A
+:1003F0002CF01C01AA24BB24650103C0EE24FF24B9
+:10040000870111969C91D20111968C91981709F44D
+:1004100045C0992339F0A80197012A193B094C09D5
+:100420005D0906C0A60195012E193F09400B510B2D
+:1004300057FD08C01182338222822483358346838C
+:1004400057831DC081E081833382228288279927C8
+:10045000DC01821B930BA40BB50B84839583A683CD
+:10046000B7830DC0220F331F441F551F24833583CC
+:10047000468357838281938101979383828324816A
+:10048000358146815781DA01C9010197A109B10976
+:100490008F5F9F4FAF4FBF4328F30BC091833382D1
+:1004A0002282EA0CFB1C0C1D1D1DE482F5820683D2
+:1004B000178383E08083248135814681578157FFEC
+:1004C0001AC0C901AA2797FDA095BA2F8170907014
+:1004D000A070B0705695479537952795822B932B32
+:1004E000A42BB52B84839583A683B78382819381C4
+:1004F000019693838283DF0101C0D201CD01CDB784
+:10050000DEB7E2E1DBC3A0E2B0E0E8E8F2E0C6C3B8
+:1005100069837A838B839C832D833E834F835887A3
+:10052000E9E0EE2EF12CEC0EFD1ECE010196B70196
+:10053000D8D28E010F5E1F4FCE010596B801D1D2E1
+:100540008A8991E089278A8BC701B801AE01475E8D
+:100550005F4F8FDEF1D1A096E6E0BCC3A0E2B0E031
+:10056000E3EBF2E09BC369837A838B839C832D83C7
+:100570003E834F835887F9E0EF2EF12CEC0EFD1EE1
+:10058000CE010196B701ADD28E010F5E1F4FCE0195
+:100590000596B801A6D2C701B801AE01475E5F4F0C
+:1005A00068DECAD1A096E6E095C3A0E2B0E0EAED2D
+:1005B000F2E068C369837A838B839C832D833E83B7
+:1005C0004F835887CE010196BE01675F7F4F89D266
+:1005D000CE010596BE016F5E7F4F83D29985923022
+:1005E00088F089898230C8F0943019F4823051F44F
+:1005F00004C0843029F4923081F480E690E0C6C0D3
+:10060000923049F420E09A858A89981321E02A875C
+:10061000CE010996BBC0823049F420E09A858A89D0
+:10062000981321E02A8BCE014196B0C02D843E84E0
+:100630004F8458886D887E888F88988CEE24FF249C
+:100640008701AA24BB24650140E050E060E070E02F
+:10065000E0E0F0E0C10181709070892BE9F0E60CD8
+:10066000F71C081D191D9A01AB012A0D3B1D4C1DDD
+:100670005D1D80E090E0A0E0B0E0E614F70408051E
+:10068000190520F481E090E0A0E0B0E0BA01A901F2
+:10069000480F591F6A1F7B1FAA0CBB1CCC1CDD1CFA
+:1006A00097FE08C081E090E0A0E0B0E0A82AB92A57
+:1006B000CA2ADB2A3196E032F10549F0660C771C34
+:1006C000881C991C5694479437942794C3CFFA8575
+:1006D000EA892B893C898B859C85280F391F2E5FE1
+:1006E0003F4F17C0CA0181709070892B61F0169539
+:1006F0000795F794E79480E090E0A0E0B0E8E82A5E
+:10070000F92A0A2B1B2B76956795579547952F5FEE
+:100710003F4F77FDE7CF0CC0440F551F661F771F73
+:1007200017FD4160EE0CFF1C001F111F21503040CF
+:10073000403090E0590790E0690790E4790760F352
+:100740002B8F3C8FDB01CA018F779070A070B07047
+:1007500080349105A105B10561F447FD0AC0E1149B
+:10076000F1040105110529F0405C5F4F6F4F7F4F89
+:1007700040781A8EFE1711F081E08A8F4D8F5E8FC0
+:100780006F8F78A383E0898FCE014996D5D0A0964C
+:10079000E2E194C2A8E1B0E0EFECF3E07FC269834C
+:1007A0007A838B839C832D833E834F83588789E094
+:1007B000E82EF12CEC0EFD1ECE010196B70191D171
+:1007C0008E010F5E1F4FCE010596B8018AD1898533
+:1007D000823038F08989823020F0C701B801F9D120
+:1007E00001C08FEF6896E6E075C2A8E1B0E0EAEFDD
+:1007F000F3E054C269837A838B839C832D833E8389
+:100800004F83588789E0E82EF12CEC0EFD1ECE01B7
+:100810000196B70166D18E010F5E1F4FCE0105967E
+:10082000B8015FD18985823038F08989823020F023
+:10083000C701B801CED101C08FEF6896E6E04AC289
+:10084000A8E1B0E0E5E2F4E029C269837A838B8312
+:100850009C832D833E834F83588789E0E82EF12CBB
+:10086000EC0EFD1ECE010196B7013BD18E010F5E4D
+:100870001F4FCE010596B80134D18985823038F0FA
+:100880008989823020F0C701B801A3D101C081E07D
+:100890006896E6E01FC2ACE0B0E0E0E5F4E002C23A
+:1008A00069837A838B839C83CE010196BE016B5F43
+:1008B0007F4F17D18D81823061F1823050F18430C9
+:1008C00021F48E81882351F12EC02F81388537FD88
+:1008D00020C06E812F3131051CF06623F9F023C052
+:1008E0008EE190E0821B930B29853A854B855C85D0
+:1008F00004C056954795379527958A95D2F7662374
+:10090000B1F050954095309521953F4F4F4F5F4F37
+:100910000EC020E030E040E050E009C02FEF3FEF94
+:100920004FEF5FE704C020E030E040E050E8B9015D
+:10093000CA012C96E2E0D2C1DF92EF92FF920F93B0
+:100940001F93FC01E480F58006811781D1808081AE
+:10095000823048F480E090E0A0E1B0E0E82AF92A93
+:100960000A2B1B2BA5C0843009F49FC0823021F4D0
+:10097000EE24FF24870105C0E114F10401051105EF
+:1009800019F4E0E0F0E096C0628173819FEF623875
+:1009900079070CF05BC022E83FEF261B370B2A31AA
+:1009A00031052CF020E030E040E050E02AC0B801F2
+:1009B000A701022E04C076956795579547950A942E
+:1009C000D2F781E090E0A0E0B0E004C0880F991F6A
+:1009D000AA1FBB1F2A95D2F70197A109B1098E2141
+:1009E0009F21A023B1230097A105B10521F081E04B
+:1009F00090E0A0E0B0E09A01AB01282B392B4A2B04
+:100A00005B2BDA01C9018F779070A070B0708034D1
+:100A10009105A105B10539F427FF09C0205C3F4FBE
+:100A20004F4F5F4F04C0215C3F4F4F4F5F4FE0E09F
+:100A3000F0E02030A0E03A07A0E04A07A0E45A071F
+:100A400010F0E1E0F0E079018A0127C0603871051B
+:100A500064F5FB01E158FF4FD801C7018F77907013
+:100A6000A070B07080349105A105B10539F4E7FE9E
+:100A70000DC080E490E0A0E0B0E004C08FE390E01F
+:100A8000A0E0B0E0E80EF91E0A1F1B1F17FF05C00B
+:100A900016950795F794E794319687E01695079594
+:100AA000F794E7948A95D1F705C0EE24FF248701D7
+:100AB000EFEFF0E06E2F679566276795902F9F7791
+:100AC000D794DD24D7948E2F8695492F462B582F07
+:100AD0005D29B701CA011F910F91FF90EF90DF9040
+:100AE0000895FC01DB01408151812281622F6F77E3
+:100AF00070E0221F2227221F9381892F880F822BCB
+:100B0000282F30E0991F9927991F11969C931197D0
+:100B100021153105A9F5411551056105710511F43E
+:100B200082E037C082E89FEF13969C938E931297D2
+:100B30009A01AB0167E0220F331F441F551F6A95CE
+:100B4000D1F783E08C930DC0220F331F441F551F34
+:100B500012968D919C911397019713969C938E9367
+:100B60001297203080E0380780E0480780E458077B
+:100B700058F314962D933D934D935C9317970895D6
+:100B80002F3F310579F4411551056105710519F4BF
+:100B900084E08C93089564FF03C081E08C9312C0BD
+:100BA0001C9210C02F57304013963C932E931297EF
+:100BB00083E08C9387E0440F551F661F771F8A954B
+:100BC000D1F7706414964D935D936D937C93179752
+:100BD00008951F93DC01FB019C91923008F447C0FB
+:100BE0008081823008F443C0943051F411961C91F6
+:100BF000843099F58181682F70E0611B71093FC0D5
+:100C0000843021F0923031F48230B9F1818188232F
+:100C100089F12DC011961C9111978230F1F08181DC
+:100C20001817D9F412962D913C91139782819381D4
+:100C30008217930794F028173907BCF014968D910A
+:100C40009D910D90BC91A02D2481358146815781C5
+:100C5000281739074A075B0718F4112341F00AC027
+:100C600082179307A407B50740F4112319F061E038
+:100C700070E005C06FEF7FEF02C060E070E0CB0175
+:100C80001F9108952F923F924F925F926F927F92A1
+:100C90008F929F92AF92BF92CF92DF92EF92FF928C
+:100CA0000F931F93CF93DF93CDB7DEB7CA1BDB0B38
+:100CB0000FB6F894DEBF0FBECDBF09942A883988DD
+:100CC00048885F846E847D848C849B84AA84B984E4
+:100CD000C884DF80EE80FD800C811B81AA81B981F0
+:100CE000CE0FD11D0FB6F894DEBF0FBECDBFED0104
+:060CF0000895F894FFCF07
+:00000001FF

@@ -1,3 +1,0 @@
-avrdude -c usbtiny -B 1 -pattiny85 -U flash:w:blink.hex
-
-avrdude -c usbtiny -B 1 -pt85 -U flash:w:blink.hex   /usr/lib/udev/rules.d/99-custom.rules
